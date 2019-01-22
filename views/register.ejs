@@ -1,0 +1,40 @@
+
+<% include header.ejs %>
+
+<!-- Register Section -->
+<div class='back'>
+<div id="register">
+  <div class="container">
+    <div id="row">
+      <div class="col-md-6">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-title">
+            <h2>Register Now</h2>
+          </div>
+          <form method='post' action='/register'>
+Name:     <input type='text' name='name' placeholder='Name' required/></br>
+</br>
+Email ID:       <input type='email' name='email' placeholder='Email' required/></br>
+</br>
+Address:        <input name="address" placeholder="Address" required/></br>
+</br>
+
+
+Contact No:        <input type="number" name="contact" placeholder="Contact No." required/></br>
+</br>
+Password:       <input type='password' name='password' placeholder='password' required/></br>
+</br>
+
+<input type='submit' />
+
+</form>
+<div><span><a href='/login'>Already a member </a>
+</span></div>
+        </div>
+      </div>      </div>
+    </div>
+  </div>
+</div>
+
+
+< % include footer.ejs %>

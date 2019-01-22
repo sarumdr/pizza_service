@@ -1,0 +1,61 @@
+    
+<% include header.ejs %>
+
+
+<!-- Register Section -->
+
+<div class='back'>
+<div id='order' class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Order Now</h2>
+    </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <div class="container">
+
+          <form method='post' action='/order'>
+
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea class="form-control" rows="2" name="address"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <input type="number" class="form-control" name="quantity" min="1" value="1">
+      </div>
+
+    </div>
+  </div>
+
+  <button type="reset" class="btn btn-default">Reset</button>
+
+<input type='submit' class="btn btn-primary"/>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>

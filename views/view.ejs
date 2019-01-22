@@ -1,0 +1,47 @@
+<% include header.ejs %>
+
+<div class='back'>
+<div class="container" id='viewPizza'>
+
+  <div class="panel panel-default">
+    <div class="panel-heading"><h3 class="panel-title">Details</h3></div>
+    <div class="panel-body">
+      <table id="orders" class="table">
+        <thead>
+        <tr>
+          <th width="180">No.</th>
+          <th width="180">Id</th>
+          <th width="180">Created</th>
+          <th width="15%">Customer</th>
+          <th width="5%">Qty</th>
+          
+          <th width="180">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <% order.forEach(function(order, i) { %>
+        <tr>
+          <td><span class="label label-<% if(order.processed) { %>success<% } else { %>default<% } %>"><%= i+1 %></span></td>
+          <td><%= order.id %></td>
+          
+          <td><%= order.createdDate %></td>
+          <td>
+            <strong><%= order.name %></strong><br/>
+            <%= order.address %><br/>
+            <%= order.phone %>
+          </td>
+          <td><%= order.quantity %></td>
+          <td> 
+        <a href='/deletenote/<%= order._id%>'><i class="far fa-trash-alt"></i></a> </td>
+        </tr>
+        <% }) %>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<% include footer.ejs %>

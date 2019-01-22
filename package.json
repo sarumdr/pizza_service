@@ -1,0 +1,25 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "express-generator": "^4.16.0",
+    "favicon": "0.0.2",
+    "mongoose": "^5.4.5",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "stylesheet": "^0.9.1"
+  }
+}

@@ -1,0 +1,42 @@
+
+
+<% include header.ejs %>
+
+<div class='back'>
+<div id="login" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Login Now</h2>
+    </div>
+        </div>
+
+
+<!-- Login Section -->
+<div id="login">
+  <div class="container">
+    <div id="row">
+      <div class="col-md-6">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-title">
+            
+          </div>
+          <form method='post' action='/login'>
+
+Email ID:       <input type='email' name='email' placeholder='Email' required/></br>
+</br>
+Password:       <input type='password' name='password' placeholder='password' required/></br>
+</br>
+
+<input type='submit' />
+
+</form>
+<div><span><a href='/register' class="btn btn-primary custom-btn">Not a member? Want to Register</a>
+</span></div>
+        </div>
+      </div>      </div>
+    </div>
+  </div>
+</div>
+
+
+<% include footer.ejs%>

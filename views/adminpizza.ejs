@@ -1,0 +1,61 @@
+
+<!-- Add Pizza Section -->
+<div id="adminpizza" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>MENU</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Veg Pizza</h3>
+          <img src="/img/gallery/va.jpeg" class="img-responsive" alt="">
+    <h1>Add Pizza</h1>
+       <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <div class="container">
+
+         
+
+    <form method='post' action='/adminpizza'>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" required>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type">
+  <option value="veg">Veg Pizza</option>
+  <option value="nonveg">Non Veg Pizza</option>
+  <option value="mania">Mania</option>
+  
+</select>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" name="price" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="description">Description</label>
+      <textarea rows="2" cols="10" name="des" placeholder="Write your text here"></textarea>
+
+           </div>
+
+          <label><span class="text-form">Upload image</span>
+                <!-- <input type="number" name="cost"> -->
+                  <input type="file" name='image'>
+                            </label>
+
+    </div>
+  </div>
+
+            <button type="submit">Add Pizza</button>
+    </form>
+  </body>
+</html>
